@@ -1,0 +1,34 @@
+<!--
+ * @Autor: ErioY
+ * @Date: 2019-08-30 19:20:44
+ * @Email: 1973545559@qq.com
+ * @Github: https://github.com/ErioY
+ * @LastEditors: ErioY
+ * @LastEditTime: 2019-08-30 19:25:49
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var arr = [];
+    var arr1 = [];
+    // 生成一个1-35的数组
+    for (var i = 1; i <= 35; i++) {
+        arr.push(i);
+    }
+    // 乱序排序数字
+    arr.sort(function(a,b) {
+        return Math.random() - 0.5;
+    })
+    // 设置数组的长度为7，只取前七个数字
+    arr.length = 7;
+    console.log("随机数：" + arr);
+    </script>
+</body>
+</html>
